@@ -13,5 +13,10 @@ setupTasks:
         # Install WSL2 distros
         wsl --install -d Ubuntu-22.04
 
-        # install robot framework
+        # Install robot framework
         pip install robotframework
+  - task: powershell
+    inputs:
+      command: |
+        code --install-extension ms-python.python
+      runAsUser: true
