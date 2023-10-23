@@ -14,6 +14,7 @@ setupTasks:
         wsl --install -d Ubuntu-22.04
 
         # Install robot framework
+        python.exe -m pip install --upgrade pip
         pip install robotframework
   - task: powershell
     inputs:
